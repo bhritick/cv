@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <style>
         #hero {
@@ -22,18 +24,256 @@
 </head>
 
 <body>
+    <header></header>
 
-    <section id="heeer">
-        <div class="container py-5">
+    <section class="my-5">
+        <div class="container">
             <div class="row">
-                <div class="col-12 my-5 py-5">
-                    <h1 class="display-1 text-center">Contact us</h>
+                <div class="col-lg-3 col-12">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Personal Details
+                            </button>
+                        </li>
+                        <li class="list-group-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Educational Details
+                            </button>
+                        </li>
+                        <li class="list-group-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Experiences
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-9 col-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Personal Details
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <form class="card border border-white border-5 shadow rounded-0 mb-3 px-5 py-4"
+                                        id="him">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="fs-4">Personal Details</p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="form-group">
+                                                    <label for="fname" class="text-dark my-2">👨&zwj;🦱 Full
+                                                        name</label>
+                                                    <input type="text"
+                                                        class="form-control rounded-0 border-dark shadow-none"
+                                                        id="fname">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="mailid" class="text-dark my-2">📬 Email
+                                                        address</label>
+                                                    <input type="email"
+                                                        class="form-control rounded-0 border-dark shadow-none"
+                                                        id="mailid">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="telno" class="text-dark my-2">📲 Mobile number</label>
+                                                    <input type="tel"
+                                                        class="form-control rounded-0 border-dark shadow-none"
+                                                        id="telno">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="form-group">
+                                                    <label for="urmsg" class="text-dark my-2">Address</label>
+                                                    <textarea rows="5"
+                                                        class="form-control rounded-0 border-dark shadow-none"
+                                                        id="urmsg"></textarea>
+                                                </div>
+                                                <div class="d-grid gap-2">
+                                                    <button class="btn btn-primary my-3 py-2 px-4" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                        aria-expanded="false" aria-controls="collapseTwo">
+                                                        Next
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Educational Details
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <form class="card border border-white border-5 shadow rounded-0 mb-3 px-5 py-4"
+                                        id="him">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="fs-4"> Education</p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="form-group">
+                                                    <label for="fname" class="text-dark my-2">School Name</label>
+                                                    <input type="text"
+                                                        class="form-control rounded-0 border-dark shadow-none"
+                                                        id="fname">
+                                                </div>
+                                                <div class="form-group my-3">
+                                                    <label for="fname" class="text-dark my-2">Score in 10th
+                                                        Class</label>
+                                                    <input type="text"
+                                                        class="form-control rounded-0 border-dark shadow-none"
+                                                        id="fname">
+                                                </div>
+                                                <div class="form-group my-3">
+                                                    <label for="fname" class="text-dark my-2">Year</label>
+                                                    <input type="text"
+                                                        class="form-control rounded-0 border-dark shadow-none"
+                                                        id="fname">
+                                                </div>
+                                                <div class="form-group my-3">
+                                                    <label for="fname" class="text-dark my-2">Score in 10+2
+                                                        Class</label>
+                                                    <input type="text"
+                                                        class="form-control rounded-0 border-dark shadow-none"
+                                                        id="fname">
+                                                </div>
+                                                <div class="form-group my-3">
+                                                    <label for="fname" class="text-dark my-2">Year</label>
+                                                    <input type="text"
+                                                        class="form-control rounded-0 border-dark shadow-none"
+                                                        id="fname">
+                                                </div>
+                                                <div class="form-group my-3">
+                                                    <label for="fname" class="text-dark my-2">University Name</label>
+                                                    <input type="text"
+                                                        class="form-control rounded-0 border-dark shadow-none"
+                                                        id="fname">
+                                                </div>
+                                                <div class="form-group my-3">
+                                                    <label for="fname" class="text-dark my-2">Grade/ Score</label>
+                                                    <input type="text"
+                                                        class="form-control rounded-0 border-dark shadow-none"
+                                                        id="fname">
+                                                </div>
+                                                <div class="form-group my-3">
+                                                    <label for="fname" class="text-dark my-2">Year</label>
+                                                    <input type="text"
+                                                        class="form-control rounded-0 border-dark shadow-none"
+                                                        id="fname">
+                                                </div>
+                                                <div class="d-grid gap-2">
+                                                    <button class="btn btn-primary my-3 py-2 px-4" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="true" aria-controls="collapseOne">
+                                                        Previous
+                                                    </button>
+                                                </div>
+                                                <div class="d-grid gap-2">
+                                                    <button class="btn btn-primary my-3 py-2 px-4" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                        aria-expanded="false" aria-controls="collapseThree">
+                                                        Next
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Experience
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <form class="card border border-white border-5 shadow rounded-0 mb-3 px-5 py-4"
+                                        id="him">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="fs-4">Experience</p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="form-group">
+                                                    <label for="fname" class="text-dark my-2">Company Name</label>
+                                                    <input type="text"
+                                                        class="form-control rounded-0 border-dark shadow-none"
+                                                        id="fname">
+                                                </div>
+                                                <div class="form-group my-3">
+                                                    <label for="fname" class="text-dark my-2">Job Title</label>
+                                                    <input type="text"
+                                                        class="form-control rounded-0 border-dark shadow-none"
+                                                        id="fname">
+                                                </div>
+                                                <div class="form-group my-3">
+                                                    <label for="fname" class="text-dark my-2">Start Date</label>
+                                                    <input type="text"
+                                                        class="form-control rounded-0 border-dark shadow-none"
+                                                        id="fname">
+                                                </div>
+                                                <div class="form-group my-3">
+                                                    <label for="fname" class="text-dark my-2">End Date</label>
+                                                    <input type="text"
+                                                        class="form-control rounded-0 border-dark shadow-none"
+                                                        id="fname">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="urmsg" class="text-dark my-2">Details</label>
+                                                    <textarea rows="5"
+                                                        class="form-control rounded-0 border-dark shadow-none"
+                                                        id="urmsg"></textarea>
+                                                </div>
+                                                <div class="d-grid gap-2">
+                                                    <button class="btn btn-primary my-3 py-2 px-4 border-0"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwo" aria-expanded="false"
+                                                        aria-controls="collapseTwo">
+                                                        Previous
+                                                    </button>
+                                                </div>
+                                                <div class="d-grid gap-2">
+                                                    <a class="btn btn-primary my-3 py-2 px-4 border-0" href="skill.html"
+                                                        role="button" id="him2">Next</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
     </section>
-    <section class="py-5 wave-bg3 py-5">
-        <div class="container ">
-            <div class="row ">
+    <!-- <section class="py-5 wave-bg3 py-5">
+        <div class="container">
+            <div class="row">
                 <div class=" col-md-6 col-12">
                     <div class="list-group">
                         <a href="personal.html" class="list-group-item list-group-item-action">Personal Details</a>
@@ -50,13 +290,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2 " crossorigin="anonymous "></script>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
